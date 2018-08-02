@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "FZ";
+	src: url("../fonts/方正小标宋简体.ttf");
+}
+
+* {
+	font-family: "microsoft yahei";
+}
+
+body {
+	background-image: url(../img/bji82000833.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: auto !important;
+}
+
+html, body {
+	min-heigth: 100%;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+#main {
+	width: 600px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 31%;
+}
+
+#nav {
+	height: 30px;
+	background-color: rgba(49, 133, 197, .4);
+	padding: 20px 50px;
+	box-shadow: 0 0 20px #111;
+}
+
+#nav .fa {
+	font-size: 30px;
+	color: rgba(255, 255, 255, .6);
+	display: inline-block;
+}
+
+.fa-bars {
+	float: left;
+}
+
+.fa-user-circle {
+	float: right;
+}
+
+#banner {
+	height: 380px;
+	background-color: rgba(255, 255, 255, .8);
+	text-align: center;
+	overflow: hidden;
+	box-shadow: 0 10px 20px #111;
+}
+
+img {
+	margin-top: 60px;
+}
+
+p {
+	margin-top: 30px;
+	letter-spacing: 5px;
+	font-size: 46px;
+	color: rgb(32, 113, 177);
+	font-family: "FZ";
+}
+
+form {
+	width: 266px;
+	height: 60px;
+	margin: 60px auto 0 auto;
+}
+
+#input-con {
+	width: 260px;
+	height: 50px;
+	border: 1px solid rgb(32, 113, 177);
+	border-radius: 20px;
+	float: left;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 0 0 20px rgb(108, 132, 166);
+	overflow: hidden;
+}
+
+#query input[type=text] {
+	width: 160px;
+	height: 40px;
+	margin: 5px 0 0 20px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: rgb(80, 80, 80);
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+#query ::-webkit-input-placeholder {
+	color: rgb(160, 160, 160);
+}
+
+button {
+	width: 40px;
+	height: 46px;
+	font-size: 24px;
+	color: #88afc5;
+	background-color: rgb(255, 255, 255);
+	border: none;
+	outline: none;
+	cursor: pointer;
+	float: right;
+	margin-right: 10px;
+}
+
+#th {
+	background-color: rgba(105, 159, 208, .85);
+	overflow: hidden;
+	border-bottom: 1px solid #111;
+	cursor: default;
+}
+
+#th .row-con {
+	margin-top: 18px;
+	margin-left: 52px;
+}
+
+#th .row-con div {
+	color: white;
+	font-size: 14px;
+}
+
+#th .row-con span {
+	color: white;
+	text-shadow: none;
+	font-weight: normal;
+}
+
+#act {
+	width: 80px;
+	text-align: center;
+}
+
+#result {
+	height: 100%;
+	overflow: hidden;
+}
+
+#result-tb {
+	width: 600px;
+	margin: 20px auto 0 auto;
+	font-size: 16px;
+	color: #555;
+}
+
+.row {
+	width: 596px;
+	height: 40px;
+	margin-bottom: 16px;
+	padding: 2px 0;
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, .8);
+	border: white 1px solid;
+	box-shadow: 0 0 10px #000;
+	cursor: default;
+	position: relative;
+	overflow: hidden;
+}
+
+.row-con {
+	width: 500px;
+	height: 36px;
+	margin: 8px 0 0 50px;
+	/*只给一个写auto会怎样？*/
+}
+
+.row-con>div {
+	float: left;
+	text-align: center;
+	color: #555;
+}
+
+.dec-l {
+	width: 20px;
+	height: 44px;
+	background-color: rgb(105, 159, 208);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.dec-r {
+	width: 20px;
+	height: 44px;
+	background-color: rgb(105, 159, 208);
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.sno {
+	width: 50px;
+}
+
+.sname {
+	width: 80px;
+}
+
+.sex {
+	width: 50px;
+}
+
+.classname {
+	width: 100px;
+}
+
+.tel {
+	width: 120px;
+}
+
+span {
+	display: inline-block;
+	width: 4px;
+	float: left;
+	color: #93a4b3;
+	font-weight: bold;
+	text-shadow: 0 0 2px #2172B2;
+}
+
+.row-con .fa {
+	font-size: 18px;
+	cursor: pointer;
+	color: #2172b2;
+}
+
+.fa-clone {
+	margin-left: 22px;
+}
+
+.fa-trash-o {
+	margin-left: 10px;
+}

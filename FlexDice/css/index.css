@@ -1,0 +1,158 @@
+/*公共样式*/
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 84px;
+    height: 84px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px #777;
+    /* padding: 8px; */
+    margin: 10px;
+    display: flex;
+}
+
+.item {
+    width: 20px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+
+/*各骰子的样式*/
+
+.box2 {
+    justify-content: center;
+}
+
+.box3 {
+    justify-content: flex-end;
+}
+
+.box4 {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.box5 {
+    justify-content: center;
+    align-items: center;
+}
+
+.box6 {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.box7 {
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.box8 {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.box9 {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.box10 {
+    justify-content: space-between;
+}
+
+.box11 {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box12 {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box13 {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.box14 .item:nth-child(2) {
+    align-self: center;
+}
+
+.box15 {
+    justify-content: space-between;
+}
+
+.box15 .item:nth-child(2) {
+    align-self: flex-end;
+}
+
+.box16 {
+    justify-content: space-between;
+}
+
+.box16 .item:nth-child(2) {
+    align-self: center;
+}
+
+.box16 .item:nth-child(3) {
+    align-self: flex-end;
+}
+
+.box17 {
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.box18 {
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-end;
+}
+
+
+/*解法一*/
+
+.box19 {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box19 .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*解法二（作者解法）*/
+
+.box20 {
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.box20 .column {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+.box21 {
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.box22 {
+    flex-flow: column wrap;
+    align-content: space-between;
+}

@@ -1,0 +1,102 @@
+/*公共样式*/
+
+.container {
+    display: flex;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(odd) {
+    background-color: #ccc;
+}
+
+.item:nth-child(even) {
+    background-color: #ddd;
+}
+
+
+/*单独样式*/
+
+.con1 .left {
+    flex: 0 0 200px;
+}
+
+.con1 .right {
+    flex: 1;
+}
+
+.con2 .left,
+.con2 .center {
+    flex: 0 0 200px;
+}
+
+.con2 .right {
+    flex: 1;
+}
+
+.con3 .left,
+.con3 .right {
+    flex: 0 0 200px;
+}
+
+.con3 .center {
+    flex: 1;
+}
+
+.con4 .right {
+    flex: 1;
+}
+
+.con5 div {
+    flex: 1;
+}
+
+.con6 {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.con6 .row {
+    display: flex;
+    flex: 1;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+}
+
+.con6 .item {
+    flex: 1;
+}
+
+.con7 {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.con7 .header,
+.con7 .footer {
+    background-color: #bbb;
+    flex: 0 0 100px;
+}
+
+.con7 .main {
+    flex: 1;
+    display: flex;
+}
+
+.con7 .left,
+.con7 .right {
+    flex: 0 0 300px;
+}
+
+.con7 .center {
+    flex: 1;
+}

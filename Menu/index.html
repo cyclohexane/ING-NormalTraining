@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        select {
+            width: 100px;
+            height: 35px;
+        }
+        /*11行少了个反括号*/
+        
+        div {
+            margin: 0px auto;
+            width: 150px;
+            height: 100px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <select id="province" onchange="changeCity()">
+        <!--为啥定义两个id啊？？而且第二个还是驼峰，用短横杠分割，别驼峰-->
+            <option value="1" selected>湖北</option>
+			<option value="2">湖南</option>
+            <option value="3">陕西</option>			
+		</select>
+        <select id="city">
+			<option value="1" selected>黄冈</option>
+			<option value="2">黄石</option>
+			<option value="3">武汉</option>
+		</select>
+    </div>
+    <script type="text/javascript">
+        function changeCity() {
+            var province = ["湖北", "湖南", "陕西"];
+            var citys = [
+                ["黄冈", "武汉", "黄石"],
+                ["长沙", "株洲", "岳阳"],
+                ["西安", "宝鸡", "咸阳", "汉中"]
+            ];
+            var selected = document.getElementById("province").value;
+            /*45行少了var声明*/
+            var city = document.getElementById('city');
+            /*截图里47行少了个分号，但docx里又添上了，分号这种东西和括号一样是最基本的吧*/
+            //设置对应被动菜单的长度
+            //console.log(city.length); 返回3
+            //city.length = citys[selected - 1].length;
+            //console.log(city.length);  还是返回3，我估计这个属性是只读啊，不能改
+            //所以设置city.length没什么卵用，反正下面都要动态设置option数量的
+
+
+            for (var i = 0; i < citys[selected - 1].length; i++) {
+                //you guess what，length打成了lenth
+                city.options[i].value = i + 1;
+                city.options[i].text = citys[selected - 1][i];
+            }
+        }
+    </script>
+</body>
+
+</html>
